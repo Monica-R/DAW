@@ -1,0 +1,16 @@
+ESTO ES UNA PRUEBA
+
+Programa pseudocodigoUno
+
+entero A;
+entero B;
+entero C;
+
+Inicio
+
+leer A;
+leer B;
+C = A + B;
+escribir C;
+
+Fin pseudocodigoUno;
