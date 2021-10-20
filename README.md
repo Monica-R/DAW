@@ -1,2 +1,2 @@
 # DAW
-Curso 1º de Desarrollo de Aplicaicione web
+Curso 1º de Desarrollo de Aplicaciones web
