@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1vw;
+}
+body{
+    background-color: tomato;
+}
+
+/******* CONTENEDOR *******/
+
+#container{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+}
+
+
+/******* CABECERA ********/
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.photo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img{
+    width: 40%;
+}
+
+.photo:nth-of-type(2) img{
+    width: 40%;
+    border-radius: 99px;   
+}
+
+/******* CONTENIDO ********/
+
+#main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#aside{
+    width: 20%;
+    min-height: 70vh;
+    background-color: orange;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#nav .nav-item,
+.nav-item a{
+    width: 100%;
+    padding: 3%;
+}
+
+.nav-item a{
+    display: block;
+    text-align: center;
+}
+
+.nav-item a:link{
+    color: black;
+}
+
+.nav-item a:hover{
+    color: red;
+    text-transform: uppercase;
+}
+
+#section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.part-one{
+    width: 100%;
+    display: flex;
+}
+
+.part-one img{
+    width: 100%;
+}
+
+.title h1{
+    font-size: 2vw;
+}
+
+.bloque{
+    width: 100%;
+    display: flex;
+}
+
+.part-two{
+    width: 60%;
+}
+.part-three{
+    width: 40%;
+}
+
+.texto p{
+    padding: 2%;
+    text-align: justify;
+}
+
+.bloque-lista{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lista{
+    width: 40%;
+    display: flex;
+}
+
+
+.part-three p{
+    text-align: justify;
+}
+
+.review{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.review p{
+    width: 90%;
+}
+
+.review img{
+    width: 14%;
+    border-radius: 999px;
+}
+
+.review span{
+    width: 20%;
+}
+
+.part-four{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.part-four p{
+    width: 50%;
+    padding: 2%;
+}
+
+.profiles{
+    width: 50%;
+}
+
+.profiles img{
+    width: 10%;
+    border-radius: 999%;
+}
+
+#footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer span{
+    font-size: 2vw;
+    text-align: center;
+}
+
+button{
+    width: 14%;
+    color: red;
+    background-color: blue;
+    border-radius: 20%;
+    padding: 0.4%;
+    cursor: pointer;
+}
