@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <form action="http://www.iesanaluisabenitez.org" method="post" id="my-form">
+        <h1>Registro para nuevos usuarios</h1>
+        <h2>Disfruta de un descuento promocional de 30 euros</h2>
+        <h2>Sólo hasta fin de existencias</h2>
+        <table id="tabla">
+            <tr class="fila">
+                <td><label for="nombre">Nombre</label></td>
+                <td><input type="text" name="nombre" value="Romarei"/></td>
+            </tr>
+            <tr class="fila">
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><input type="text" name="apellidos" value="Vega García"/></td>
+            </tr>
+            <tr class="fila">
+                <td><label for="tel">Teléfono</label></td>
+                <td><input type="text" name="tel" value="928111111"/></td>
+            </tr>
+            <tr class="fila">
+                <td><label for="genero">Género</label></td>
+                <td>
+                    <input type="radio" name="genero" value="hombre"/>Hombre
+                    <input type="radio" name="genero" value="mujer"/>Mujer
+                </td>
+            </tr>
+            <tr class="fila">
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" value="romareiv@gmail.com"/></td>
+            </tr>
+            <tr class="fila">
+                <td><label for="idioma">Idioma</label></td>
+                <td>
+                    <select name="idioma" id="idioma">
+                        <option value="E">Español</option>
+                        <option value="I">Inglés</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="fila">
+                <td><label for="fecha">Fecha de Nacimiento</label></td>
+                <td><input type="date" name="fecha"/></td>
+            </tr>
+            <tr class="fila">
+                <td><input type="checkbox" name="aceptar_condiciones"/></td>
+                <td>
+                    He leído y aceptado las condiciones de esta promoción y la política de Protección de datos.
+                    Todos los datos pasarán a un fichero de nuestro uso exclusivo. Tus datos no serán facilitados a terceros.
+                </td>
+            </tr>
+            <tr class="final" colspan="1">
+                <td><input type="submit" value="Enviar pedido"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
