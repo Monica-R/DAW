@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img{
+    width: 10%;
+}
+/****** CONTENEDOR ******/
+#contenedor{
+    width: 80%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-rows: 30% 40% 20% 10%;
+    grid-template-columns: 10% 70% 10%;
+    margin: 0px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+/****** CABECERA ******/
+
+#header{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10%;
+}
