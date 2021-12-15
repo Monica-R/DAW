@@ -1,0 +1,5 @@
+<selector>:nth-of-type(){} → tiene casi la misma funcionalidad que nth:child() pero con la diferencia de que nth-of-type especifica 
+dependiendo del tipo de etiqueta el hijo de su padre (1, 2, 3,...)
+
+usar más en cuenta el min-height y el max-height
+para temas con la altura, y así evitar los "cruces" con los elementos
