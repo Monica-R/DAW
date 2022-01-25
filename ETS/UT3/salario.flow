@@ -1,0 +1,27 @@
+st3=>start: start salario
+io5=>inputoutput: input: precio_hora, horas
+op8=>operation: total = 0
+cond11=>condition: if (horas <= 40)
+op15=>operation: total = (horas * precio_hora)
+io39=>inputoutput: output:  total
+e37=>end: end function return
+cond20=>condition: if (horas <= 48)
+op24=>operation: horas_extra = (horas - 40)
+op26=>operation: total = ((40 * precio_hora) + ((2 * precio_hora) * horas_extra))
+op30=>operation: horas_extra_triple = (horas - 48)
+op32=>operation: total = (((40 * precio_hora) + ((2 * precio_hora) * 8)) + ((3 * precio_hora) * horas_extra_triple))
+
+st3->io5
+io5->op8
+op8->cond11
+cond11(yes)->op15
+op15->io39
+io39->e37
+cond11(no)->cond20
+cond20(yes)->op24
+op24->op26
+op26->io39
+cond20(no)->op30
+op30->op32
+op32->io39
+
