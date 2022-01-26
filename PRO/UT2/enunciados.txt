@@ -1,0 +1,5 @@
+El ejercicio consiste en la implementación de un sistema de información para que los propietarios de un coche puedan
+ganar dinero compartiendo las plazas de su coche cuando vayan a realizar un viaje.
+
+El ejercicio consiste en la implementación de un sistema de información para 
+representar de forma simplificada una empresa y sus clientes.
