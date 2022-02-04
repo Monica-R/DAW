@@ -11,7 +11,7 @@ def total_vuelta(tiempos_vuelta):
 def vuelta_rapida(tiempos):
     # completar función
     for i in tiempos:
-        for j in i:
+        for j in i: # ESTO SOBRA
             minimo = min(tiempos)
     i_sector = tiempos.index(minimo)
     return i_sector
