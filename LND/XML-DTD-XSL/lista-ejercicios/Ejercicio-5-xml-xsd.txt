@@ -1,0 +1,20 @@
+Ejercicio 5 esquemas
+
+Se quiere definir un esquema para documentos que guardan información de un alumno de un instituto. De cada alumno se guardan datos personales y datos académicos. Para ello se van a definir dos esquemas XML: personas y docencia, que se explican a continuación. 
+
+    personas.xsd: contiene las definiciones de elementos correspondientes a datos personales. Es el mismo esquema que se creó en el ejercicio 3 de prácticas de XML Schema básicas, donde se define un elemento llamado “persona” 
+    docencia.xsd: contiene las definiciones de elementos relacionados con los grupos y las asignaturas. En este esquema se definen los siguientes elementos: 
+        grupo: tipo cadena para guardar el nombre de un grupo 
+        asignatura: cada asignatura tiene los siguientes elementos hijo: 
+        nombre de la asignatura 
+        horas semanales 
+        profesor: el nombre del profesor que imparte la asignatura 
+
+Escribir los dos esquemas “personas.xsd” y “docencia.xsd”, asociándoles los espacios de nombres destino "http://www.prueba.es/persona" y "http://www.prueba.es/docencia" respectivamente. En ambos casos se debe especificar que en los documentos instancia los elementos y atributos pertenecientes al espacio de nombres vayan cualificados con prefijo. 
+Escribir un documento instancia XML que, utilizando elementos de los dos vocabularios definidos, guarde los siguientes datos de un alumno: 
+
+    Nombre: Pepe García 
+    Dni:25390952X 
+    Comentario: repetidor 
+    Grupo: 1ASIR 
+    Asignaturas: Lenguajes de Marcas (4 horas, profesor Juan Moreno), y Fundamentos de Hardware (3 horas, profesora Virginia López)
