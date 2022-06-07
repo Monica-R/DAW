@@ -1,0 +1,1 @@
+{"nombre" : "Mónica","Aficiones" : ["leer","escuchar música","jugar"],"Comida" : "Ensaladilla rusa","Deportes" : ["baloncesto","karate","natación"]}

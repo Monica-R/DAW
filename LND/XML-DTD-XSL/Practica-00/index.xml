@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="uft-8"?>
+<!DOCTYPE persona SYSTEM "persona.dtd">
+
+<persona dni="12345678-L" estadocivil="casado">
+    <nombre>María Pilar</nombre>
+    <apellido>Sánchez</apellido>
+    <edad>60</edad>
+    <enactivo/>
+</persona>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (persona)+>
+    <!ELEMENT persona (nombre, tlf)>
+        <!ATTLIST persona id CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tlf (#PCDATA)>
+    ]>
+
+<agenda>
+    <persona id="p1">
+        <nombre>Ricardo Borriquero</nombre>
+        <tlf>951345678</tlf>
+    </persona>
+    <persona id="p2">
+        <nombre>Eva Risto</nombre>
+        <tlf>955837659</tlf>
+    </persona>
+</agenda>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tabla_periodica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="tabla_periodica.xsd">
+    <atomo estado="liquido">
+        <nombre>Carbono</nombre>
+        <simbolo>C</simbolo>
+        <caracteristicas_atomicas>
+            <peso_atomico>0.81</peso_atomico>
+            <numero_atomico>14</numero_atomico>
+        </caracteristicas_atomicas>
+        <descubridor>
+            <nombre>John</nombre>
+            <apellido1>Than</apellido1>
+            <apellido2>Doe</apellido2>
+        </descubridor>
+        <punto_ebullicion unidades="kelvin"/>
+        <densidad unidades="metros_cubicos"/>
+        <origen>
+            <terrestre></terrestre>
+        </origen>
+    </atomo>
+</tabla_periodica>

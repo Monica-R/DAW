@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+
+    <!-- DEFINICIÓN DE ELEMENTOS SIMPLES -->
+
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([A-Z]{1})([a-z])*"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="simbolo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{1,3}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="peso_atomico" type="xs:float"/>
+    <xs:element name="numero_atomico" type="xs:integer"/>
+
+    <xs:element name="densidad">
+        <xs:complexType>
+            <xs:attribute name="unidades" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- DEFINICIÓN DE GRUPOS  -->
+
+    <xs:group name="descubridorG">
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element name="apellido1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([A-Z]{1})([a-z])*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="apellido2">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([A-Z]{1})([a-z])*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    
+
+    <!-- DEFINICIÓN DE ATRIBUTOS -->
+
+    <xs:attribute name="estado">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="solido"/>
+                <xs:enumeration value="liquido"/>
+                <xs:enumeration value="gaseoso"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="unidades" default="centigrados">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="centigrados|kelvin"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <!-- ESQUELETO -->
+
+    <xs:element name="tabla_periodica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="atomo">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element ref="nombre"/>
+                            <xs:element ref="simbolo"/>
+                            <xs:element name="caracteristicas_atomicas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="peso_atomico"/>
+                                        <xs:element ref="numero_atomico"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="descubridor">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="descubridorG"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="punto_ebullicion">
+                                <xs:complexType>
+                                    <xs:attribute ref="unidades"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element ref="densidad"/>
+                            <xs:element name="origen">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="terrestre"/>
+                                        <xs:element name="extra-terrestre"/>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                        <xs:attribute ref="estado"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

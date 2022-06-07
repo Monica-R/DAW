@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lunas [
+    <!ELEMENT luna EMPTY *>
+        <!ATTLIST luna numero ID #REQUIRED>
+        <!ATTLIST luna nombre IDREF #REQUIRED>
+        <!ATTLIST luna planeta IDREF #IMPLIED>
+]>
+
+<lunas>
+    <luna numero="N234"/>
+    <luna numero="N479" nombre="Mimas" planeta="Saturno"/>
+    <luna numero="N566" nombre="Diode" planeta="Saturno"/>
+    <luna numero="N607" nombre="Miranda" planeta="Urano"/>
+</lunas>

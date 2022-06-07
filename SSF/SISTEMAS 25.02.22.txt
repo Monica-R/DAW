@@ -1,0 +1,10 @@
+intentar instalar en linux:
+audacity
+evolution
+edge
+gimp
+jdownloader
+filezilla
+
+
+copias de seguridad: realiza una copia exacta de lo que necesitamos

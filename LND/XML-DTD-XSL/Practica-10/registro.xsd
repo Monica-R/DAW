@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- DEFINICIÓN DE ELEMENTOS SIMPLES -->
+    <xs:simpleType name="apellidos-y-nombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z\s]{1,30}\,[a-zA-Z]{1,20}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\w{1,15}@\w{1,25}\.[a-zA-Z]{2,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+<!-- DEFINICIÓN DE ATRIBUTOS -->
+    <xs:attribute name="identificador">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[U|E][0-9]{1,5}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attributeGroup name="atribPersona">
+        <xs:attribute name="fecha" type="xs:date"/>
+        <xs:attribute name="hora" type="xs:time"/>  
+    </xs:attributeGroup>
+    
+
+    <!-- DEFINICIÓN DE GRUPOS -->
+
+    <xs:group name="tipoPersona">
+        <xs:sequence>
+            <xs:element name="apellidos-y-nombre" type="xs:string"/>   
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="conexiones">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="conexion" type="xs:integer" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>  
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="tipoPersonaAmpliado">
+        <xs:sequence>
+            <xs:element name="apellidos-y-nombre" type="xs:string"/>   
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="conexiones">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="conexion" type="xs:integer" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="departamento" type="xs:string"/> 
+        </xs:sequence>
+    </xs:group>
+    
+    <!-- ESQUELETO -->
+
+    <xs:element name="registro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="tipoPersona"/>
+                        </xs:sequence>
+                        <xs:attributeGroup ref="atribPersona"/>
+                        <xs:attribute name="identificador" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="empleado">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="tipoPersonaAmpliado"/>
+                        </xs:sequence>
+                        <xs:attributeGroup ref="atribPersona"/>
+                        <xs:attribute name="identificador" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

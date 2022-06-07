@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="ferreterias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ferreteria" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="pedido" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idpedido" type="xs:string"/>
+                  <xs:element name="producto" minOccurs="1" maxOccurs="unbounded"/>
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="idproducto" type="xs:string"/>
+                      <xs:element name="color">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:enumeration value="blanco"/>
+                            <xs:enumeration value="azul"/>
+                            <xs:enumeration value="verde"/>
+                            <xs:enumeration value="negro"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="peso" minOccurs="0" maxOccurs="1"/>
+                      <xs:complexType>
+                        <xs:choice>
+                          <xs:element name="libras">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="0"/>
+                                <xs:maxInclusive value="1000"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="kilos" type="xs:integer">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="0"/>
+                                <xs:maxInclusive value="1500"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:sequence>
+          </xs:complexType>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

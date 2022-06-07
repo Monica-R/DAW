@@ -1,0 +1,6 @@
+INTERFAZ DE CONEXIÓN:
+LAS MÁS UTILIZADAS SON LA CONEXIÓN USB, FIREWIRE (IEE 1394a) - MAC Y ETHERNET
+OTROS: PUERTO PARALELO Y SCSI
+
+cada punto son 3 leds - relación de aspecto
+4:3 y 16:4 van como referencia en torno a ancho:alto, en puntos

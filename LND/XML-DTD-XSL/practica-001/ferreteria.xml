@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ferreterias SYSTEM "ferreteria.dtd">
+<ferreterias xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ferreteria.xsd">
+  <ferreteria>
+    <nombre>Ferreterias Guanarteme</nombre>
+    <email>ferrguanarteme@gmail.com</email>
+    <pedido>
+      <idpedido>T0025</idpedido>
+      <producto>
+        <idproducto>LPO697112</idproducto>
+        <color>azul</color>
+        <peso>
+          <libras>89</libras>
+        </peso>
+      </producto>
+      <idpedido>T0025</idpedido>
+      <producto>
+        <idproducto>LRT64127</idproducto>
+        <color>verde</color>
+        <peso>
+          <kilos>100</kilos>
+        </peso>
+      </producto>
+    </pedido>
+  </ferreteria>
+</ferreterias>

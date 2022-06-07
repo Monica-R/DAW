@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="vehiculos">
+    <xs:complexType name="vehiculo">
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="modelo" type="xs:string"/>
+        <xs:complexType name="fabricacion">
+          <xs:sequence>
+            <xs:complexType name="inicio">
+              <xs:sequence>
+                <xs:element name="dia" type="xs:integer"/>
+                <xs:element name="mes" type="xs:string"/>
+                <xs:element name="anyo" type="xs:integer"/>
+              </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="fin">
+              <xs:sequence>
+                <xs:element name="dia" type="xs:integer"/>
+                <xs:element name="mes" type="xs:string"/>
+                <xs:element name="anyo" type="xs:integer"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:sequence>
+        </xs:complexType>
+        <xs:complexType name="modificaciones" mixed="true">
+          <xs:sequence>
+            <xs:element name="modificacion" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

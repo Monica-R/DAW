@@ -1,0 +1,22 @@
+CPU → la parte esencial del ordenador
+el procesador se integra en bloques de silicio
+
+ley de moore → uno de los fundadores de intel, según dice, anualmente se duplican el número de transistores
+
+núcleos e hilos
+
+velocidad de trabajo o frecuencia de trabajo
+
+memoria cache
+
+el procesador necesita la placa base y "el sótalo"
+
+links:
+https://is603arquicom2016.wordpress.com/arquitectura-cisc-vs-risc/
+https://www.studocu.com/es-ar/document/universidad-nacional-arturo-jauretche/organizacion-y-arquitectura-de-las-computadoras/apunte-cisc-risc-y-unidad-de-control-microprogramada/7293746
+https://www.buenastareas.com/ensayos/Implementaci%C3%B3n-Cableada-Vs-Microprogramada/7861889.html
+http://cv.uoc.edu/annotation/8255a8c320f60c2bfd6c9f2ce11b2e7f/619469/PID_00218272/PID_00218272.html
+https://www.oposinet.com/temario-de-informatica/temario-1-informatica/tema-3-componentes-estructura-y-funcionamiento-de-la-unidad-central-de-proceso/
+https://www.lifeder.com/unidad-de-control/
+
+l1 l2 l3- de menos a más lejania

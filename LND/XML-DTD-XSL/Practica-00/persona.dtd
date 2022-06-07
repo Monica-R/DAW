@@ -1,0 +1,6 @@
+<!ELEMENT persona (nombre,apellido,edad,enactivo)>
+<!ATTLIST persona dni ID #REQUIRED estadocivil (soltero|casado|divorciado) ··casado··>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT enactivo (#PCDATA) EMPTY>

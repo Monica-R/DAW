@@ -1,0 +1,11 @@
+<!-- DTD para un documento XML que contiene una lista de editoriales con información opcional -->
+<!ELEMENT editoriales (titulo,editorial+)>
+<!-- RECORDAR QUE EL SIGNO + SIGNIFICA QUE EL ELEMENTO HIJO PUEDE APARECER UNA O MÁS VECES -->
+<!ELEMENT editorial (nombre, email?,homepage?,direccion,tfno?,fax?)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT homepage (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT tfno (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>

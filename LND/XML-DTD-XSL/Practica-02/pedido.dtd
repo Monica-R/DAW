@@ -1,0 +1,5 @@
+<!ELEMENT pedido (destinatario,articulo,direccion,fecha)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT articulo (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>

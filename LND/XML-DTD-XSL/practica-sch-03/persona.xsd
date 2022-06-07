@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <!-- DECLARACIÓN DE ELEMENTOS SIMPLES -->
+  <xs:element name="nombre" type="xs:string"/>
+  <xs:element name="apellidos" type="xs:string"/>
+  <xs:element name="dni" type="xs:integer"/>
+  <xs:element name="comentario" type="xs:string"/>
+  
+  <!-- DECLARACIÓN DE ATRIBUTOS -->
+  <xs:attribute name="nacimiento" type="xs:string"/>
+  
+  <!-- DECLARACIÓN DE ELEMENTOS COMPLEJOS -->
+  <xs:element name="persona">
+    <xs:complexType name="datos">
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+        <xs:element name="dni" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="comentario" type="xs:string"/>
+  </xs:element>
+</xs:schema>

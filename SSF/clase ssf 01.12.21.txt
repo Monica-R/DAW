@@ -1,0 +1,2 @@
+proceso → programas en ejecución
+archivo → conjunto de bytes

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editoriales SYSTEM "editoriales.dtd">
+
+<editoriales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="editoriales.xsd">
+  <titulo>EDITORIAL</titulo>
+  <editorial>
+    <nombre>Acua</nombre>
+    <email>acuaedit@gmail.com</email>
+    <homepage>https://www.acuaedit.es</homepage>
+    <direccion>C/ Barcelona, 18</direccion>
+    <tfno>928428801</tfno>
+    <fax>967543676</fax>
+  </editorial>
+  
+  <editorial>
+    <nombre>Enlace editoriales</nombre>
+    <email>editorialesenlace@gmail.com</email>
+    <homepage>https://www.editorialesenlace.com</homepage>
+    <direccion>C/. Las Mesas, 55</direccion>
+    <tfno>699248395</tfno>
+  </editorial>
+</editoriales>

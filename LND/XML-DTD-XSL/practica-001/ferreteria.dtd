@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD para un documento XML que contiene una lista de pedidos de productos para ferreterías-->
+<!ELEMENT ferreterias (ferreteria*)>
+<!ELEMENT ferreteria (nombre, email?, pedido+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT pedido (idpedido,producto+)>
+<!ELEMENT idpedido (#PCDATA)>
+<!ELEMENT producto (idproducto,color,peso?)>
+<!ELEMENT idproducto (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT peso (libras|kilos)>
+<!ELEMENT libras (#PCDATA)>
+<!ELEMENT kilos (#PCDATA)>

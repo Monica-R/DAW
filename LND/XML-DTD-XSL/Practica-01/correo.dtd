@@ -1,0 +1,8 @@
+<!ELEMENT correo (de,para,asunto,mensaje)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT mensaje (saludo,cuerpo,despedida)>
+<!ELEMENT saludo (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+<!ELEMENT despedida (#PCDATA)>

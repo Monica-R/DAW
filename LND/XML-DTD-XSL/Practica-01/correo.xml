@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE correo SYSTEM 'correo.dtd'>
+<!--<!DOCTYPE correo[
+<!ELEMENT correo (de,para,asunto,mensaje)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT mensaje (saludo,cuerpo,despedida)>
+<!ELEMENT saludo (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+<!ELEMENT despedida (#PCDATA)>
+]>
+-->
+
+<correo>
+	<de>José Ramón</de>
+	<para>Juan maría</para>
+	<asunto> Partido de futbol en la Tv</asunto>
+	<mensaje> 
+		<saludo>Hola Juanma</saludo>
+		<cuerpo>
+			El próximo sábado ponen en la televisióne el partido real madrid barcelona..¿te apetece que lo veamos juntos? Espero tus noticias
+		</cuerpo>
+		<despedida>Un abrazo</despedida>
+	</mensaje>
+</correo>
